@@ -1,5 +1,5 @@
-// src/Mock/image.ts
 export const images = {
+  
   logo: require("../assets/netflix-logo.png"),
   movie1: require("../assets/365.jpg"),
   movie2: require("../assets/1899.jpg"),
