@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { categories } from "../../Mock/Data";
 import { images } from "../../Mock/image";
+import Header from "../../components/Header";
 
 const carouselImages = [
   images.movie4,
@@ -31,16 +32,19 @@ const Home = () => {
   }, []);
 
   return (
-    <ScrollView style={styles.container}>
-      <FeaturedSection currentImage={carouselImages[currentIndex]} />
-      {categories.map((category, index) => (
-        <CategorySection
-          key={index}
-          title={category.title}
-          images={category.data}
-        />
-      ))}
-    </ScrollView>
+    <View style={styles.container}>
+      <Header />
+      <ScrollView>
+        <FeaturedSection currentImage={carouselImages[currentIndex]} />
+        {categories.map((category, index) => (
+          <CategorySection
+            key={index}
+            title={category.title}
+            images={category.data}
+          />
+        ))}
+      </ScrollView>
+    </View>
   );
 };
 

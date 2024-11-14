@@ -4,24 +4,24 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#000",
-    alignItems: "center",
-    justifyContent: "center",
     paddingHorizontal: 20,
+    paddingTop: 40,
+  },
+
+  logoContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 90,
+  },
+
+  backButton: {
+    marginRight: 10,
   },
 
   logo: {
-    width: 220,
-    height: 60,
-    alignSelf: "center",
-    marginBottom: 30,
-  },
-
-  title: {
-    color: "#fff",
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 18,
-    textAlign: "center",
+    width: 130,
+    height: 70,
+    resizeMode: "contain",
   },
 
   input: {
@@ -37,11 +37,13 @@ export const styles = StyleSheet.create({
   button: {
     width: "100%",
     height: 50,
-    backgroundColor: "#e50914",
+    borderColor: "#fff",
+    borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 5,
     marginTop: 20,
+    backgroundColor: "transparent",
   },
 
   buttonText: {
@@ -50,27 +52,17 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 
-  optionsContainer: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    width: "100%",
-    marginTop: 15,
-  },
-
-  optionText: {
-    color: "#aaa",
-    fontSize: 14,
-  },
-
   helpText: {
     color: "#aaa",
     fontSize: 14,
-    textDecorationLine: "underline",
+    textAlign: "center",
+    marginTop: 20,
   },
 
   signupContainer: {
     flexDirection: "row",
-    marginTop: 30,
+    justifyContent: "center",
+    marginTop: 20,
   },
 
   signupText: {
@@ -82,5 +74,13 @@ export const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 14,
     fontWeight: "bold",
+  },
+
+  recaptchaText: {
+    color: "#aaa",
+    fontSize: 12,
+    textAlign: "center",
+    marginTop: 20,
+    paddingHorizontal: 10,
   },
 });
